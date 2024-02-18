@@ -1,0 +1,140 @@
+/* Base styles and typography adjustments */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #44426E, #BBAAB8); /* Gradient background using Fiord and Shady Lady */
+    color: #FFFFFF; /* White text color for readability */
+    line-height: 1.6;
+}
+
+/* Enhanced global heading styles for visual hierarchy */
+h1, h2, h3 {
+    text-align: center; /* Ensures all headings are centrally aligned */
+    color: #FFFFFF; /* White color for headings */
+}
+
+h1 {
+    font-size: 2.2rem; /* Adjusted for better prominence */
+    margin-top: 0; /* Reduces space above h1 for tighter layout */
+}
+
+h2 {
+    font-size: 1.8rem; /* Clear section differentiation */
+}
+
+h3 {
+    font-size: 1.4rem; /* Ideal for sub-sections and titles within content */
+}
+
+p {
+    color: #FFFFFF; /* White color for body text */
+    font-size: 1rem; /* Standardized text size */
+    margin-bottom: 15px; /* Standardized spacing for paragraph separation */
+}
+
+/* Landing Page Style enhancements */
+#landing {
+    background: linear-gradient(135deg, #44426E, #BBAAB8); /* Gradient background using Fiord and Shady Lady */
+    color: #FFFFFF; /* White color for readability */
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh; /* Set height to full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing img {
+    max-width: 120px;
+    border-radius: 50%; /* Circular images */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    margin-bottom: 20px;
+}
+
+/* Button Style for interaction */
+#view-portfolio {
+    background-color: #333; /* Dark color for contrast */
+    color: #FFFFFF; /* White text color */
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#view-portfolio:hover, #view-portfolio:focus {
+    background-color: #4F4F4F; /* A lighter hover effect */
+    transform: translateY(-3px);
+}
+
+/* Navbar Style */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(135deg, #44426E, #BBAAB8); /* Gradient background using Fiord and Shady Lady */
+    color: #FFFFFF;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #EFEFEF; /* Subtle hover effect for interactivity */
+    color: #333;
+}
+
+/* Unified Section Styles */
+section, .project, .modal-content {
+    background: linear-gradient(135deg, #44426E, #BBAAB8); /* Gradient background using Fiord and Shady Lady */
+    color: #FFFFFF; /* White text color for clarity */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin: 20px 0;
+    padding: 40px 20px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Contact and Footer Adjustments */
+footer {
+    background-color: #44426E; /* Fiord background for consistency */
+    color: #FFFFFF; /* White text for readability */
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
