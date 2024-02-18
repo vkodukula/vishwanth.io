@@ -2,7 +2,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: cursive;
+    font-family: courier;
     background: linear-gradient(135deg, #44426E, #BBAAB8); /* Gradient background using Fiord and Shady Lady */
     color: #FFFFFF; /* White text color for readability */
     line-height: 1.6;
